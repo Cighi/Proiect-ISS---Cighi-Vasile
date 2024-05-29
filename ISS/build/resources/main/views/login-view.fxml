@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="547.0" styleClass="pane" stylesheets="/style/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iss.Controllers.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="142.0" layoutY="1.0" prefHeight="355.0" prefWidth="263.0" styleClass="vbox">
+         <children>
+            <Label id="title" alignment="CENTER" prefHeight="38.0" prefWidth="224.0" text="Bug Spotting" textFill="#080103">
+               <font>
+                  <Font name="Segoe UI Black" size="25.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="313.0" prefWidth="263.0" spacing="10.0">
+               <children>
+                  <Label id="label" text="Username">
+                     <font>
+                        <Font name="Verdana Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <Label id="label" text="Password" textFill="#0b0404">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" />
+                  <VBox prefHeight="81.0" prefWidth="123.0" spacing="15.0">
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="121.0" text="Login" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
